@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/workoutFragmentList">
+
+    <fragment
+        android:id="@+id/workoutFragmentList"
+        android:name="com.example.pixeltracker.WorkoutFragmentList"
+        android:label="Become Built Different"
+        tools:layout="@layout/fragment_workout_list" >
+        <action
+            android:id="@+id/action_workoutFragmentList_to_updateWorkoutFragment"
+            app:destination="@id/updateWorkoutFragment" />
+        <action
+            android:id="@+id/action_workoutFragmentList_to_addWorkoutFragment"
+            app:destination="@id/addWorkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateWorkoutFragment"
+        android:name="com.example.pixeltracker.UpdateWorkoutFragment"
+        android:label="Update York Workout Here:"
+        tools:layout="@layout/fragment_update_workout">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_updateWorkoutFragment_to_workoutFragmentList"
+            app:destination="@id/workoutFragmentList"
+            app:popUpTo="@id/workoutFragmentList"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWorkoutFragment"
+        android:name="com.example.pixeltracker.AddWorkoutFragment"
+        android:label="AddWorkoutFragment" >
+        <action
+            android:id="@+id/action_addWorkoutFragment_to_workoutFragmentList"
+            app:destination="@id/workoutFragmentList"
+            app:popUpTo="@id/workoutFragmentList"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
