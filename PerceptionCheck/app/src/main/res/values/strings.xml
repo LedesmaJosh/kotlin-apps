@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PerceptionCheck</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="classes">
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Paladin</item>
+        <item>Sorcerer</item>
+        <item>Wizard</item>
+        <item>Warlock</item>
+
+    </string-array>
+</resources>

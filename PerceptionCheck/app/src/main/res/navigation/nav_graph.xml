@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/spell_book">
+
+    <fragment
+        android:id="@+id/spell_book"
+        android:name="com.example.perceptioncheck.SpellBookFragment"
+        tools:layout="@layout/fragment_spell_book" >
+        <action
+            android:id="@+id/action_spell_book_to_singleSpellFragment"
+            app:destination="@id/singleSpellFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleSpellFragment"
+        android:name="com.example.perceptioncheck.SingleSpellFragment"
+        android:label="fragment_single_spell"
+        tools:layout="@layout/fragment_single_spell" >
+        <action
+            android:id="@+id/action_singleSpellFragment_to_spell_book"
+            app:destination="@id/spell_book" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>
