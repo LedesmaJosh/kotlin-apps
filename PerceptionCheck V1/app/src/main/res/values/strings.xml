@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PerceptionCheck</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- SPELL TRACKER LAYOUT STRINGS-->
+    <string name="spelltracktitle">Spells</string>
+    <string name="addspellbtn">Add Spell</string>
+    <string name="spellnamelabel">Spell Name:</string>
+    <string name="spelllevel">Spell Level:</string>
+    <string name="spellradius">Spell Radius: </string>
+    <string name="clearspellbtn">Clear Spells</string>
+
+    <!-- Character Sheet Strings-->
+    <string name="Str">Strength</string>
+    <string name="Dex">Dexterity</string>
+    <string name="Con">Constitution</string>
+    <string name="Int">Intelligence</string>
+    <string name="Wis">Wisdom</string>
+    <string name="Cha">Charisma</string>
+    <string name="char_name">Name</string>
+    <string name="char_class">Class</string>
+    <string name="race">Race</string>
+    <string name="subClass">Sub Class</string>
+    <string name="equipProf"></string>
+    <string name="ac">AC</string>
+    <string name="age">Age</string>
+    <string name="stats">Stats</string>
+    <string name="modifier">Modifiers</string>
+
+
+</resources>

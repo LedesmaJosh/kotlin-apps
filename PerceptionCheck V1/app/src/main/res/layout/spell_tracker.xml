@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/spelltracker"
+    android:background="@drawable/perceptioncheck">
+    <TextView
+        android:id="@+id/spelltrackertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:text="@string/spelltracktitle"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/spellnameLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spelltrackertitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/spellnamelabel"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/spellName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spelltrackertitle"
+        android:layout_marginTop="-1dp"
+        android:inputType="text"
+        android:layout_toRightOf="@id/spellnameLabel"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBaseline="@id/spellnameLabel"
+        android:textSize="15sp"
+        android:background="#ffffff"/>
+    <TextView
+        android:id="@+id/spelllevellabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="@string/spelllevel"
+        android:textSize="15dp"
+        android:layout_below="@id/spellnameLabel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/spellLevel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spellName"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/spelllevellabel"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:layout_alignBaseline="@id/spelllevellabel"
+        android:textSize="15sp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/spellradiusLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="@string/spellradius"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/spelllevellabel"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/spellRadius"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/spellradiusLabel"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBaseline="@id/spellradiusLabel"
+        android:textSize="15sp"
+        android:background="#ffffff"/>
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spellRadius"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/addspellbtn"
+        android:textColor="#4e5380"/>
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spellRadius"
+        android:layout_toRightOf="@id/addButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/clearspellbtn"
+        android:onClick="clearSpells"
+        android:textColor="#4e5380"/>
+
+    <ListView
+        android:id="@+id/spellList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#c2c8ff"
+        >
+
+    </ListView>
+
+
+</RelativeLayout>
+
