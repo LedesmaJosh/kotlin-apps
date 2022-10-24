@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/spell_book"
-        android:name="com.example.perceptioncheck.SpellBookFragment"
+        android:name="com.delesma.perceptioncheck.SpellBookFragment"
         tools:layout="@layout/fragment_spell_book" >
         <action
             android:id="@+id/action_spell_book_to_singleSpellFragment"
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/singleSpellFragment"
-        android:name="com.example.perceptioncheck.SingleSpellFragment"
+        android:name="com.delesma.perceptioncheck.SingleSpellFragment"
         android:label="fragment_single_spell"
         tools:layout="@layout/fragment_single_spell" >
         <action
