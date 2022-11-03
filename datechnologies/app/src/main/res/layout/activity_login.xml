@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gpc_sunset"
+    tools:context=".activities.LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/login_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_space_between_login"
+        android:paddingTop="@dimen/linear_layout_padding_top"
+        android:background="@color/background"
+        android:backgroundTintMode="multiply"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/edit_text_field_margin"
+                android:layout_marginRight="@dimen/edit_text_field_margin"
+                android:hint="@string/email_hint"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:backgroundTint="@color/button_blue"
+                />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/edit_text_field_margin"
+            android:layout_marginRight="@dimen/edit_text_field_margin"
+            android:hint="@string/password_hint"
+            android:layout_marginBottom="@dimen/extra_space_between_login"
+            android:backgroundTint="@color/button_blue"
+            />
+        <Button
+            android:id="@+id/login_activity_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/extra_space_between_login"
+            android:layout_marginLeft="@dimen/login_button_margin_left"
+            android:layout_marginRight="@dimen/login_button_margin_right"
+            android:background="@drawable/blue_button_ripple"
+            android:text="@string/button_login"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/button_text"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

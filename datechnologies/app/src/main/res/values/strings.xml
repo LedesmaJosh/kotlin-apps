@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">datechnologies</string>
+    <!-- Main Screen Strings -->
+    <string name="activity_main_title">Coding Tasks</string>
+    <string name="chat_button">CHAT</string>
+    <string name="login_button">LOG IN</string>
+    <string name="animation_button">ANIMATION</string>
+
+    <!-- Login Screen Strings-->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="button_login">Login</string>
+
+    <!--Animation Screen Strings-->
+    <string name="fade_button">Fade In</string>
+</resources>

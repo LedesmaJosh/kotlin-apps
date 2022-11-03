@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="extra_space_between_login">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="chat_username">13sp</dimen>
+    <dimen name="chat_message">15sp</dimen>
+    <dimen name="hint_field_text">16sp</dimen>
+    <dimen name="input_field_text">16sp</dimen>
+
+    <!-- Button Sizes-->
+    <dimen name="button_height">55dp</dimen>
+    <dimen name="button_margin_bottom">24dp</dimen>
+    <dimen name="icon_padding_left">22dp</dimen>
+    <dimen name="icon_padding_right">16dp</dimen>
+
+    <!-- Login Activity Dimens-->
+    <dimen name="login_button_margin_left">25dp</dimen>
+    <dimen name="login_button_margin_right">26dp</dimen>
+    <dimen name="edit_text_field_margin">30dp</dimen>
+    <dimen name="linear_layout_padding_top">24dp</dimen>
+
+    <!-- Chat Activity Dimens-->
+    <dimen name="chat_item_margin_top">16dp</dimen>
+    <dimen name="chat_icon_margin_left">16dp</dimen>
+    <dimen name="chat_icon_margin_right">7dp</dimen>
+    <dimen name="chat_name_margin_bottom">4dp</dimen>
+    <dimen name="chat_card_margin_right">21dp</dimen>
+    <dimen name="chat_text_padding_overall">8dp</dimen>
+
+    <!--Animation Activity Dimens-->
+    <dimen name="animation_button_margins">30dp</dimen>
+    <dimen name="animation_logo_left_margin">23dp</dimen>
+    <dimen name="animation_logo_right_margin">22dp</dimen>
+    <dimen name="animation_logo_top_margin">100dp</dimen>
+</resources>
